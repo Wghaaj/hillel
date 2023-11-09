@@ -6,57 +6,61 @@
 
 
 
-// виведення 6 
+// '2' + '4' -> 6 (алгебраїчна сума)
 
-console.log("виведення 6 ")
+console.log("'2' + '4' -> 6 (алгебраїчна сума)")
 
-let result1 = 3 + 3;
-console.log("1st result:", result1); 
+let result =  parseInt('2') + parseInt('4');
+console.log(result)
 
-let result2 = 12 - 6;
-console.log("2nd result:", result2); 
+let result1 =  Number('2') + Number('4');
+console.log(result1)
 
-let result3 = 2 * 3;
-console.log("3rd result:", result3); 
-
-let result4 = 12 / 2;
-console.log("4th result:", result4);
-
-let result5 = 6.0;
-console.log("5th result:", result5); 
-
-let result6 = Number(true) * 6;
-console.log("6th result:", result6); 
-
-let result7 = parseInt("6");
-console.log("7th result:", result7);
-
-let result8 = (4 + 2) * 1;
-console.log("8th result:", result8); 
+let result2 = +'2' + +'4';
+console.log(result2)
 
 
 
 
-//виведення "this simple string"
+//7.2 / '1.2' -> 6 (ділення двох чисел)
 
-console.log(" виведення this simple string")
+console.log("7.2 / '1.2' -> 6 (ділення двох чисел)")
 
-let result1_1 = 'this' + ' simple' + ' string';
-console.log("1st result:", result1_1); 
+let result1_1 = 7.2 / parseFloat('1.2');
+console.log(result1_1); 
 
-let result2_1 = `${'this'} ${'simple'} ${'string'}`;
-console.log("2nd result:", result2_1);
+let result2_1 = 7.2 / Number('1.2');
+console.log(result2_1);
+
+let result3_1 = 7.2 / +'1.2';
+console.log(result3_1)
 
 
 
 
-// виведення "answer is 35"
 
-console.log("виведення answer is 35")
+// 'this' + ' simple' + ' string' -> 'this simple string' (конкатенація строк)
 
-let result1_2  = 'answer' + ' is' + (parseInt('30') + 5);
-console.log("1st result:", result1_2); 
+console.log("'this' + ' simple' + ' string' -> 'this simple string' (конкатенація строк)")
 
-let result2_2 = `answer is ${parseInt('30') + 5}`;
-console.log("2nd result:", result2_2); 
+let result1_2  = 'this' + ' simple' + ' string';
+console.log(result1_2); 
+
+let result2_2 = `${'this'}${' simple'}${' string'}`;
+console.log(result2_2); 
+
+
+
+//'answer' + ' is:' + '30' + 5 -> 'answer is 35' (сума з конкатенацією)
+
+console.log("'answer' + ' is:' + '30' + 5 -> 'answer is 35' (сума з конкатенацією)")
+
+let result1_3 = 'answer is: ' + (parseInt('30') + 5);
+console.log(result1_3)
+
+let result2_3 = `answer is: ${parseInt('30') + 5}`;
+console.log(result2_3)
+
+let result3_3 = 'answer is: ' + (+ '30' + 5);
+console.log(result3_3)
 
