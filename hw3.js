@@ -61,6 +61,6 @@ console.log(result1_3)
 let result2_3 = `answer is: ${parseInt('30') + 5}`;
 console.log(result2_3)
 
-let result3_3 = 'answer is: ' + (+ '30' + 5);
+let result3_3 = 'answer is: ' + (+'30' + 5);
 console.log(result3_3)
 
