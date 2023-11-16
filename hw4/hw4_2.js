@@ -1,4 +1,4 @@
-console.log("Second task")
+alert("Second task")
 const userInput = prompt("Please enter any value:");
 if (userInput !== null) {
     if (!isNaN(userInput)) {
