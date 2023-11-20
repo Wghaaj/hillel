@@ -3,25 +3,17 @@ alert("Next game!")
 let userInput1, userInput2;
 let number1, number2;
 
-while (true) {
+do {
   userInput1 = prompt("Enter first number:");
-  if (!isNaN(userInput1)) {
-    number1 = parseFloat(userInput1);
-    break;
-  } else {
-    alert("Only numbers, please");
-  }
-}
+} while (isNaN(userInput1) && alert("Only numbers, please"));
 
-while (true) {
-  userInput2 = prompt("Enter second number: ");
-  if (!isNaN(userInput2)) {
-    number2 = parseFloat(userInput2);
-    break;
-  } else {
-    alert("Only numbers, please");
-  }
-}
+number1 = parseFloat(userInput1);
+
+do {
+  userInput2 = prompt("Enter second number:");
+} while (isNaN(userInput2) && alert("Only numbers, please"));
+
+number2 = parseFloat(userInput2);
 
 let sum = 0;
 let product = 1;
